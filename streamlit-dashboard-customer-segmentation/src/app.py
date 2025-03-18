@@ -105,5 +105,5 @@ st.text("")
 st.markdown("---")
 
 st.page_link('https://www.linkedin.com/in/yeins-aristizabal/', label="LinkeIn")
-st.page_link('https://www.linkedin.com/in/yeins-aristizabal/', label="GitHub")
+st.page_link('https://github.com/YeinsAristizabal/ai/tree/main/streamlit-dashboard-customer-segmentation', label="GitHub")
 st.markdown("**Developed by Yeins Aristizabal**")
