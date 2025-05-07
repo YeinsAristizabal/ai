@@ -20,3 +20,8 @@ Customer segmentation helps identify groups with similar characteristics to crea
 - **Libraries**: pandas, scikit-learn, matplotlib, seaborn, plotly  
 - **Tools**: Jupyter Notebook  
 - **Dataset Source**: https://www.kaggle.com/datasets/vishakhdapat/customer-segmentation-clustering
+
+App demo:
+
+![Customer Segmentation Dashboard](src/images/img-1.png)
+![Customer Segmentation Dashboard](src/images/img-2.png)
