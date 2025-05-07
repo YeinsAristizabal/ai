@@ -10,6 +10,7 @@ This repository contains a collection of personal projects and experiments on AI
 2. **Neural Networks and Deep Learning**: A subfield of AI based on deep neural networks for complex tasks like image classification and natural language processing.  
 3. **Natural Language Processing (NLP)**: Techniques for enabling machines to understand, interpret, and generate human language.  
 4. **Computer Vision**: Development of algorithms that allow computers to "see" and interpret images or videos.
+5. **Generative AI and Intelligent Agents**: AI systems capable of creating content (text, images, code) and autonomously performing tasks through reasoning, decision-making, and tool usage.
 
 ## 💡 **Problems Solved by AI**  
 AI can solve a wide range of problems, such as:
@@ -27,8 +28,9 @@ AI can solve a wide range of problems, such as:
 
 ## 🚀 **Technologies and Libraries**  
 - **Languages**: Python
-- **Frameworks**: TensorFlow, Keras, PyTorch, Scikit-learn, Streamlit
-- **Libraries**: NumPy, pandas, Matplotlib, Seaborn, Plotly, NLTK, spaCy  
+- **Frameworks**: TensorFlow, Keras, PyTorch, Scikit-learn, Streamlit, LangChain
+- **Libraries**: NumPy, pandas, Scipy, Matplotlib, Seaborn, Plotly, NLTK, spaCy, HuggingFace, openCV
+- **LLMs and Vector storage**: Mistral 7B, LLaMA, BERT, Gemma, sentence-transformers, faiss-cpu
 - **Tools**: Jupyter Notebook, Google Colab, GCP  
 - **Data Sources**: Kaggle, UCI Machine Learning Repository, Public APIs
 
