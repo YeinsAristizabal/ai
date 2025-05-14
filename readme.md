@@ -31,4 +31,4 @@ Explorar y construir soluciones innovadoras utilizando tecnologías modernas com
 
 **Desarrollado por [Yeins Aristizabal](https://www.linkedin.com/in/yeins-aristizabal/)**  
 📁 [Repositorio en GitHub](https://github.com/tuusuario/tu-repo)
-[YouTube](https://www.youtube.com/@analytics-ai-h5k)
+🔗 [YouTube](https://www.youtube.com/@analytics-ai-h5k)
