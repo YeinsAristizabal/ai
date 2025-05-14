@@ -1,34 +1,33 @@
-# Intelligent Document Q&A App with Streamlit  
-Ask questions. Get instant answers. All from your documents — powered by open-source AI.
+# 📄 Aplicación Inteligente de Preguntas y Respuestas sobre Documentos con Streamlit - RAG - OLLAMA - GEMMA
+Haz preguntas. Obtén respuestas instantáneas. Todo desde tus documentos — impulsado por IA de código abierto.
 
-## 🚀 **What It Does**
-An intelligent assistant that lets users upload PDFs and ask questions in natural language. Built with open-source LLMs, LangChain, FAISS, and Streamlit — 100% local, secure, and blazing fast.
+## 🚀 **¿Qué Hace?**
+Un asistente inteligente que permite a los usuarios subir archivos PDF y hacer preguntas en lenguaje natural. Construido con LLMs de código abierto, LangChain, FAISS y Streamlit — 100% local.
 
-## 🧠 **Why It Matters**
-Businesses spend hours searching internal files like contracts, invoices, or medical reports. This tool automates that, turning documents into a searchable AI assistant — no cloud, no privacy risk.
+## 🧠 **¿Por Qué Es Importante?**
+Las empresas gastan horas buscando archivos internos como contratos, facturas o informes médicos. Esta herramienta automatiza ese proceso, convirtiendo documentos en un asistente de búsqueda con IA — sin nube, sin riesgo de privacidad.
 
-## 🛠️ **Architecture**
-🗂️ PDF Parsing: Extracts text from PDFs.
-✂️ Chunking: Splits into sections for accurate retrieval.
-🔍 Semantic Search: Uses FAISS & embeddings to find relevant parts.
-🧠 Local LLM (Ollama): Generates answers based on the document.
-🌐 Wikipedia Tool: Fallback when documents lack context.
-🔁 LangChain: Orchestrates the multi-step reasoning flow.
-📊 Streamlit: Provides clean, interactive web UI.
+## 🛠️ **Arquitectura**
+- 🗂️ **Procesamiento de PDFs**: Extrae el texto desde archivos PDF.
+- ✂️ **División por fragmentos**: Separa el contenido en secciones para una recuperación más precisa.
+- 🔍 **Búsqueda semántica**: Usa FAISS y embeddings para encontrar partes relevantes.
+- 🧠 **LLM local (Ollama)**: Genera respuestas basadas en el contenido del documento.
+- 🔁 **LangChain**: Orquesta el flujo de razonamiento en varios pasos.
+- 📊 **Streamlit**: Proporciona una interfaz web interactiva.
 
-## 🧠 Key Features
-- Ask questions in natural language using local open-source LLMs.
-- Instant answers from internal company documents.
-- Wikipedia integration for external knowledge.
-- 100% local, secure, and private — no data leaves your machine.
+## 🧠 **Características Clave**
+- Realiza preguntas en lenguaje natural usando LLMs de código abierto de manera local.
+- Respuestas instantáneas basadas en documentos internos de la empresa.
+- 100% local, seguro y privado — los datos nunca salen de tu equipo.
 
-## 🧪 **Tech Stack**
-- **LLM**: gemma:2b via Ollama
-- **Vector DB**: FAISS
+## 🧪 **Tecnologías Utilizadas**
+- **LLM**: gemma:2b a través de Ollama
+- **Base de datos vectorial**: FAISS
 - **Frameworks**: LangChain, Streamlit
 - **Embeddings**: sentence-transformers
-- **Parsing**: PyPDFLoader
-- **Language Detection**: 
+- **Procesamiento de PDFs**: PyPDFLoader
+- **Detección de idioma**: langdetect
 
-**Developed by [Yeins Aristizabal](https://www.linkedin.com/in/yeins-aristizabal/)**  
-🔗 [GitHub](https://github.com/YeinsAristizabal/ai/tree/main/streamlit-dashboard-customer-segmentation)
+**Desarrollado por [Yeins Aristizabal](https://www.linkedin.com/in/yeins-aristizabal/)**  
+📁 [GitHub](https://github.com/YeinsAristizabal/ai/tree/main/streamlit-dashboard-customer-segmentation)
+[YouTube](https://www.youtube.com/@analytics-ai-h5k)
