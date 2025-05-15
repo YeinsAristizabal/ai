@@ -8,14 +8,15 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationSummaryMemory
 from langchain.prompts import PromptTemplate
 from PyPDF2 import PdfReader
+import base64
 
 # Setup
-st.set_page_config(page_title="Document Q&A Assistant")
-st.title("📄 Intelligent Document Q&A App (100% Open Source)")
+st.set_page_config(page_title="Document Assistant")
+st.title("📄 Intelligent Document Q&A App (100% Open Source: LangChain - OLLAMA - GEMMA - FAISS- Streamlit)")
 st.markdown("Upload a document and ask questions in natural language.")
 st.markdown("---")
 
-columns = st.columns((1,1,1))
+columns = st.columns((1, 1, 1))
 with columns[0]:
     st.page_link('https://www.linkedin.com/in/yeins-aristizabal/', label="LinkedIn")
 with columns[1]:
@@ -24,6 +25,7 @@ with columns[2]:
     st.markdown("**Developed by Yeins Aristizabal**")
 
 st.markdown("---")
+
 # Session State Setup
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
@@ -38,12 +40,30 @@ if "summary" not in st.session_state:
 if "language" not in st.session_state:
     st.session_state.language = ""
 
+# Upload PDF
+uploaded_file = st.file_uploader("Upload a PDF file", type=["pdf"])
+
+if uploaded_file and "pdf_bytes" not in st.session_state:
+    pdf_bytes = uploaded_file.read()
+    st.session_state["pdf_bytes"] = pdf_bytes
+    st.session_state["filename"] = uploaded_file.name
+
 # Sidebar: Metadata and Tool Info
 with st.sidebar:
     st.markdown("### 📄 Document Info")
     if st.session_state.pdf_loaded:
         st.markdown(f"**Filename:** `{st.session_state.filename}`")
         st.markdown(f"**Detected language:** `{st.session_state.language}`")
+
+    st.markdown("---")
+    st.markdown("### 📄 PDF Preview")
+    if "pdf_bytes" in st.session_state:
+        # Mostrar vista previa del PDF desde bytes guardados
+        base64_pdf = base64.b64encode(st.session_state["pdf_bytes"]).decode('utf-8')
+        pdf_display = f"""
+        <iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="600" type="application/pdf"></iframe>
+        """
+        st.markdown(pdf_display, unsafe_allow_html=True)
 
     st.markdown("---")
     st.markdown("### ℹ️ About this app")
@@ -63,14 +83,14 @@ with st.sidebar:
         """
     )
 
-# Upload PDF
-uploaded_file = st.file_uploader("Upload a PDF file", type=["pdf"])
-if uploaded_file and not st.session_state.pdf_loaded:
+# Button to trigger document analysis
+button_analyze = st.button("Analyze", type="primary")
+
+if "pdf_bytes" in st.session_state and not st.session_state.pdf_loaded and button_analyze:
     with st.spinner("Processing document..."):
         with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp_file:
-            tmp_file.write(uploaded_file.read())
+            tmp_file.write(st.session_state["pdf_bytes"])
             pdf_path = tmp_file.name
-            st.session_state.filename = uploaded_file.name
 
         # Extract text for language detection and preview
         reader = PdfReader(pdf_path)
@@ -102,15 +122,15 @@ if uploaded_file and not st.session_state.pdf_loaded:
 
         # Build Conversational QA chain
         st.session_state.qa_chain = ConversationalRetrievalChain.from_llm(
-            llm=llm,
-            retriever=retriever,
-            memory=memory,
+            llm=llm, # gemma
+            retriever=retriever, # context
+            memory=memory, # chat history
             combine_docs_chain_kwargs={"prompt": prompt},
             verbose=True
         )
         st.session_state.pdf_loaded = True
 
-# Show summary only if button is clicked
+# Show summary only if document was analyzed
 if st.session_state.pdf_loaded:
     if st.button("📌 Show Document Summary"):
         st.markdown("### 🔍 Summary")
