@@ -32,8 +32,6 @@ Esta app ayuda a descubrir grupos de clientes con comportamientos o característ
 - **Preprocesamiento**: pandas, scikit-learn
 - **Formato de datos**: CSV
 
-**Desarrollado por [Yeins Aristizabal](https://www.linkedin.com/in/yeins-aristizabal/)**  
-
-📁 [Repositorio en GitHub](https://github.com/tuusuario/tu-repo)
+**Desarrollado por [Yeins Aristizabal](https://www.linkedin.com/in/yeins-aristizabal/)**
 
 🔗 [YouTube](https://www.youtube.com/@analytics-ai-h5k)

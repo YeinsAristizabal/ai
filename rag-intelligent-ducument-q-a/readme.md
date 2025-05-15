@@ -28,8 +28,6 @@ Las empresas gastan horas buscando archivos internos como contratos, facturas o 
 - **Procesamiento de PDFs**: PyPDFLoader
 - **Detección de idioma**: langdetect
 
-**Desarrollado por [Yeins Aristizabal](https://www.linkedin.com/in/yeins-aristizabal/)**  
-
-📁 [GitHub](https://github.com/YeinsAristizabal/ai/tree/main/streamlit-dashboard-customer-segmentation)
+**Desarrollado por [Yeins Aristizabal](https://www.linkedin.com/in/yeins-aristizabal/)**
 
 🔗 [YouTube](https://www.youtube.com/@analytics-ai-h5k)
