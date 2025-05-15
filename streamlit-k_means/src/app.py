@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import plotly.graph_objects as go
 
 # Page Configuration
 st.set_page_config(
@@ -51,7 +50,7 @@ df_filtered = df[(df["Income"] >= income_range[0]) & (df["Income"] <= income_ran
                  (df["Kidhome"].isin(kidhome_filter)) & (df["Teenhome"].isin(teenhome_filter))]
 
 # Header
-st.title("📊 Customer Segmentation Dashboard")
+st.title("📊 Customer Segmentation Dashboard - K-Means")
 st.markdown("### Explore customer insights and segment behavior using machine learning analysis.")
 st.markdown("---")
 
@@ -105,5 +104,5 @@ st.text("")
 st.markdown("---")
 
 st.page_link('https://www.linkedin.com/in/yeins-aristizabal/', label="LinkeIn")
-st.page_link('https://github.com/YeinsAristizabal/ai/tree/main/streamlit-dashboard-customer-segmentation', label="GitHub")
+st.page_link('https://github.com/YeinsAristizabal/ai/', label="GitHub")
 st.markdown("**Developed by Yeins Aristizabal**")
