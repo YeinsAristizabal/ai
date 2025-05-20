@@ -12,7 +12,7 @@ import base64
 
 # Setup
 st.set_page_config(page_title="Document Assistant")
-st.title("📄 Intelligent Document Q&A App (100% Open Source: LangChain - OLLAMA - GEMMA - FAISS- Streamlit)")
+st.title("📄 Intelligent Document Q&A ChatBot App (100% Open Source: LangChain - OLLAMA - GEMMA - FAISS- Streamlit)")
 st.markdown("Upload a document and ask questions in natural language.")
 st.markdown("---")
 

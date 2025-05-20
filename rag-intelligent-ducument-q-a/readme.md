@@ -1,4 +1,4 @@
-# 📄 Aplicación Inteligente de Preguntas y Respuestas sobre Documentos con Streamlit - RAG - OLLAMA - GEMMA
+# 📄 Aplicación ChatBot Inteligente de Preguntas y Respuestas sobre Documentos con Streamlit - RAG - LangChain - OLLAMA - GEMMA
 Haz preguntas. Obtén respuestas instantáneas. Todo desde tus documentos — impulsado por IA de código abierto.
 
 ## 🚀 **¿Qué Hace?**
