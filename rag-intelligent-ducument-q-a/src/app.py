@@ -12,7 +12,8 @@ import base64
 
 # Setup
 st.set_page_config(page_title="Document Assistant")
-st.title("📄 Intelligent Document Q&A ChatBot App (100% Open Source: LangChain - OLLAMA - GEMMA - FAISS- Streamlit)")
+st.title("📄 Intelligent Document Q&A ChatBot App (100% Open Source - RAG")
+st.subheader("LangChain - OLLAMA - GEMMA - FAISS- Streamlit")
 st.markdown("Upload a document and ask questions in natural language.")
 st.markdown("---")
 
@@ -27,6 +28,7 @@ with columns[2]:
 st.markdown("---")
 
 # Session State Setup
+# inicializa variables en el estado de sesión de Streamlit
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 if "qa_chain" not in st.session_state:
@@ -59,6 +61,7 @@ with st.sidebar:
     st.markdown("### 📄 PDF Preview")
     if "pdf_bytes" in st.session_state:
         # Mostrar vista previa del PDF desde bytes guardados
+        # Convierte un PDF en bytes a base64
         base64_pdf = base64.b64encode(st.session_state["pdf_bytes"]).decode('utf-8')
         pdf_display = f"""
         <iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="600" type="application/pdf"></iframe>
@@ -88,6 +91,7 @@ button_analyze = st.button("Analyze", type="primary")
 
 if "pdf_bytes" in st.session_state and not st.session_state.pdf_loaded and button_analyze:
     with st.spinner("Processing document..."):
+        # Crea un archivo PDF temporal con el contenido en bytes almacenado en la sesión y guarda su ruta en pdf_path.
         with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp_file:
             tmp_file.write(st.session_state["pdf_bytes"])
             pdf_path = tmp_file.name
@@ -110,7 +114,7 @@ if "pdf_bytes" in st.session_state and not st.session_state.pdf_loaded and butto
         retriever = process_pdf(pdf_path)
 
         # Get summary
-        summary = llm.predict(f"Summarize the document in 5 bullet points:\n{raw_text[:3000]}")
+        summary = llm.predict(f"Resume el ducumento en 3 puntos:\n{raw_text[:3000]}")
         st.session_state.summary = summary
 
         # Setup memory and prompt
