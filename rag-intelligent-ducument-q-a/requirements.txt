@@ -1,5 +1,7 @@
 streamlit
 langchain
+pdfreader
+pypdf
 PyPDF2
 faiss-cpu
 langchain-huggingface

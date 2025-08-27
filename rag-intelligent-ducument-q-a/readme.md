@@ -30,4 +30,4 @@ Las empresas gastan horas buscando archivos internos como contratos, facturas o 
 
 **Desarrollado por [Yeins Aristizabal](https://www.linkedin.com/in/yeins-aristizabal/)**
 
-🔗 [YouTube](https://www.youtube.com/@analytics-ai-h5k)
+🔗 [YouTube](https://www.youtube.com/@yeins-aristizabal-ai)

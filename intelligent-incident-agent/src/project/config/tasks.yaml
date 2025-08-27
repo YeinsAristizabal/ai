@@ -1,0 +1,21 @@
+# src/project/config/tasks.yaml
+_detect_category:
+  description: >
+     Categorize each comment into one of the following categories based on the input: {input}. Return the result as .json format
+  expected_output: >
+    One of the following: Technical support | Product/service issue | Billing/payments | Customer service | Safety/security
+  output_file: output/detect_category.json
+
+_detect_area:
+  description: >
+    Classify the following comment into the appropriate business area based on the input: {input}. Return the result as .json format
+  expected_output: >
+   One of the following: IT | Production | Accounting | Customer Service | Security/HR
+  output_file: output/detect_area.json
+
+_sentiment_analysis:
+  description: >
+    Perform a sentiment analysis of the following comment: {input}. Return the result as .json format
+  expected_output: >
+    One of the following: Positive | Neutral | Negative
+  output_file: output/sentiment_analysis.json

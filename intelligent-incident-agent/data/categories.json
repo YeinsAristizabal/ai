@@ -1,0 +1,34 @@
+[
+  {
+    "categoria": "Soporte técnico",
+    "area_responsable": "IT"
+  },
+  {
+    "categoria": "Fallo en producto o servicio",
+    "area_responsable": "Producion"
+  },
+  {
+    "categoria": "Facturación o pagos",
+    "area_responsable": "Contabilidad"
+  },
+  {
+    "categoria": "Atención al cliente",
+    "area_responsable": "Servicio al cliente"
+  },
+  {
+    "categoria": "Solicitud de información",
+    "area_responsable": "Ventas/Comercial"
+  },
+  {
+    "categoria": "Quejas o reclamos",
+    "area_responsable": "Caliadad/Legal"
+  },
+  {
+    "categoria": "Sugerencias o mejoras",
+    "area_responsable": "Innovacion/Producto"
+  },
+  {
+    "categoria": "Seguridad física o laboral",
+    "area_responsable": "Seguridad/RH"
+  }
+]
