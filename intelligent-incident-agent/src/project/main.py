@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # src/project/main.py
-import sys
 from crew import incidentHandling
-import streamlit as st
-
 
 def run():
     """

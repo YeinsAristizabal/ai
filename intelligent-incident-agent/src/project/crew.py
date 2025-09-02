@@ -2,12 +2,11 @@
 from crewai import LLM, Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from langchain_community.llms import Ollama
-from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 load_dotenv()
 
 llm = LLM(
-    model="groq/llama3-8b-8192",
+    model="llama-3.1-8b-instant",
     temperature=0.3,
     base_url="https://api.groq.com/openai/v1"
 )
