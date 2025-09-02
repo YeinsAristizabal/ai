@@ -23,8 +23,8 @@ Un asistente inteligente que permite a los usuarios ingresar incidentes (PQRs) p
 - **Excel**: pandas, openpyxl
 
 ## 📊 **Estructura del Excel**
-| Texto | Categoría | Área | Sentimiento | Fecha | Origen | Estado |
-|-------|-----------|------|-------------|-------|--------|--------|
+| Text | Category | Area | Sentimient | date |
+|-------|-----------|------|-------------|-------|
 
 **Desarrollado por [Yeins Aristizabal](https://www.linkedin.com/in/yeins-aristizabal/)**
 
