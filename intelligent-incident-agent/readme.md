@@ -1,5 +1,5 @@
 # 📄 Agente Inteligente de Incidentes con LLAMA - CrewAI - Streamlit  
-Envía una PQR. El agente la comprende, clasifica, analiza sentimientos, la registra en Excel y notifica automáticamente al área responsable. Todo desde una interfaz web.
+Envía una PQR. El agente la comprende, clasifica, analiza sentimientos, la registra en Excel y notifica automáticamente al área responsable. Desde una interfaz web.
 
 ## 🚀 **¿Qué Hace?**
 Un asistente inteligente que permite a los usuarios ingresar incidentes (PQRs) por medio de texto. Utiliza modelos LLM para comprender, categorizar y analizar cada mensaje. Guarda los datos en un Excel estructurado y notifica al área encargada.
@@ -28,4 +28,4 @@ Un asistente inteligente que permite a los usuarios ingresar incidentes (PQRs) p
 
 **Desarrollado por [Yeins Aristizabal](https://www.linkedin.com/in/yeins-aristizabal/)**
 
-🔗 [YouTube](https://www.youtube.com/@yeins-aristizabal-ai)
+🔗 [YouTube]
